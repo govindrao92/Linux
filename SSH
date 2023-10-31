@@ -1,1 +1,18 @@
+There are two ways to access the remote server 
+using password
+without a password (bypassing the SSH key )
 
+Why does SSH need it? 
+if you frequently access the server it's a good idea to configure your ssh keys so that you can log in without a password.
+
+steps 
+1. Generate a New SSH key pair on the Local Machine. (#ssh-keygen)
+2. copy the Public key to the Remote Machine. (# ssh-copy-id )
+3. Login to a remote server without a password.
+
+Step1: Generate an SSH key using ssh-keygen 
+ssh-keygen
+
+you can check the generated keys using 
+ls -l .ssh
+cat ~/.ssh/id_rsa.pub
