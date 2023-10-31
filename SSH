@@ -1,3 +1,5 @@
+SSH or Secure Shell is a network communication protocol that enables two computers/devices to communicate and share data.
+
 There are two ways to access the remote server 
 using password
 without a password (bypassing the SSH key )
@@ -16,3 +18,7 @@ ssh-keygen
 you can check the generated keys using 
 ls -l .ssh
 cat ~/.ssh/id_rsa.pub
+
+step2: Copy your public SSH key Geerateto remote server, (on the remote server it is copied under ~/.ssh/authorized keys file)
+
+ssh-copy-id root@192.168....
